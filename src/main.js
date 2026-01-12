@@ -16,6 +16,10 @@
 */
 
 import { refs } from './js/refs';
-import { handleForm } from './js/tasks';
+import { handleDeleteBtn, handleForm, initTasks } from './js/tasks';
+
+initTasks();
 
 refs.form.addEventListener('submit', handleForm);
+
+refs.taskList.addEventListener('click', handleDeleteBtn);
